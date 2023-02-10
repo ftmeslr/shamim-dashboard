@@ -92,7 +92,7 @@ const Sidebar = () => {
     },
   ];
   return (
-    <div className="col-span-2 shadow-md h-screen w-full p-5">
+    <div className=" bg-white col-span-2 shadow-md h-screen w-full p-5">
       {MenueItem.map((item) => {
         return (
           <SidebarItem
@@ -110,7 +110,7 @@ const SidebarItem = ({ activeMenu, setActiveMenu, item }) => {
   const { name, fa_name, icon } = item;
   return (
     <div
-      className={`flex items-center p-3 cursor-pointer p-3 text-[#77787d] border-r-4  ${
+      className={`flex items-center p-3 cursor-pointer p-3 text-[#77787d] border-r-4   ${
         activeMenu === name
           ? "bg-[#f0f6ff] rounded-md border-r-4 border-[#1e5cfa] text-[#1e5cfa]"
           : "border-[#fff]"

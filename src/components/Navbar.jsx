@@ -2,7 +2,7 @@ import Logo from "../assets/image/logo.JPG";
 import { Notification, Setting2, Logout } from "iconsax-react";
 const Navbar = () => {
   return (
-    <div className="w-full shadow-md h-[100px]">
+    <div className="w-full shadow-md h-[100px] bg-white">
       <div className="flex justify-between py-8 px-8 items-canter space-center">
         <div className="w-28">
           <img src={Logo} />
