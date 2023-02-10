@@ -1,80 +1,41 @@
 import "./App.css";
-import { useState } from "react";
 import Card from "../src/components/Card.jsx";
 import Sidebar from "../src/components/Sidebar.jsx";
-import {
-  Notification,
-  Setting2,
-  Logout,
-  Edit,
-  Facebook,
-  Dribbble,
-  Whatsapp,
-  Trash,
-} from "iconsax-react";
+import Navbar from "../src/components/Navbar.jsx";
+import Title from "../src/components/Title.jsx";
+import { Edit, Facebook, Dribbble, Whatsapp, Trash } from "iconsax-react";
 function App() {
   return (
     <div className="App rtl">
-      <div className="w-full shadow-md h-[100px]">
-        <div className="flex justify-between">
-          <div>shamim</div>
-          <div className="flex items-center">
-            <div className="w-10 h-10 rounded-full">
-              <Notification size="32" color="#FF8A65" />
-            </div>
-            <div className="w-10 h-10 rounded-full">
-              <Setting2 size="32" color="#FF8A65" />
-            </div>
-            <div className="w-10 h-10 rounded-full">
-              <Notification size="32" color="#FF8A65" />
-            </div>
-            <div>
-              <Logout size="32" color="#FF8A65" />
-            </div>
-          </div>
-        </div>
-      </div>
+      <Navbar />
       <div className="flex grid grid-cols-12 gap-4">
         <Sidebar />
-        <div className="col-span-2 shadow-md  w-full rounded-xl mt-10 flex-col items-center justify-center ">
-          <div className="flex">
-            <p>اطلاعات شناسایی</p>
-            <div className="h-1 w-full bg-gray-200"></div>
-            <Edit size="32" color="#FF8A65" />
-          </div>
+        <div className="col-span-2 shadow-md  w-full rounded-xl mt-10 flex-col items-center justify-center p-4 ">
+          <Title item={"اطلاعات شناسایی"} />
           <div className="w-10 h-10 rounded-full ">
             <img src="" />
           </div>
           <p>مهدی ساغری</p>
-          <div className="w-15 h-15 rounded-full border-solid ">
-            <Facebook size="18" color="#FF8A65" variant="Bold" />
+          <div className="flex">
+            <div className="w-15 h-15 rounded-full border-solid ">
+              <Facebook size="18" color="#FF8A65" variant="Bold" />
+            </div>
+            <div className="w-15 h-15 rounded-full border-solid ">
+              <Dribbble size="18" color="#FF8A65" variant="Bold" />{" "}
+            </div>
+            <div className="w-15 h-15 rounded-full border-solid ">
+              <Whatsapp size="18" color="#FF8A65" variant="Bold" />{" "}
+            </div>
           </div>
-          <div className="w-15 h-15 rounded-full border-solid ">
-            <Dribbble size="18" color="#FF8A65" variant="Bold" />{" "}
-          </div>
-          <div className="w-15 h-15 rounded-full border-solid ">
-            <Whatsapp size="18" color="#FF8A65" variant="Bold" />{" "}
-          </div>
+          <Title item={"تگ لاین ها "} />
 
-          <div className="flex">
-            <p>تگ لاین ها </p>
-            <div className="h-1 w-full bg-gray-200"></div>
-            <Edit size="32" color="#FF8A65" />
-          </div>
-          <div className="flex">
-            <p> درباره من </p>
-            <div className="h-1 w-full bg-gray-200"></div>
-            <Edit size="32" color="#FF8A65" />
-          </div>
+          <Title item={" درباره من "} />
+
           <p>
             تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و
             سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
           </p>
-          <div className="flex">
-            <p>مهارت ها </p>
-            <div className="h-1 w-full bg-gray-200"></div>
-            <Edit size="32" color="#FF8A65" />
-          </div>
+          <Title item={"مهارت ها "} />
         </div>
         <div className="col-span-8">
           <div className="flex">
