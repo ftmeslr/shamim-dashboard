@@ -1,8 +1,9 @@
 import "./App.css";
-import Card from "../src/components/Card.jsx";
-import Sidebar from "../src/components/Sidebar.jsx";
-import Navbar from "../src/components/Navbar.jsx";
-import Title from "../src/components/Title.jsx";
+import Card from "./components/Card.jsx";
+import Sidebar from "./components/Sidebar.jsx";
+import Navbar from "./components/Navbar.jsx";
+import Title from "./components/Title.jsx";
+import Avatar from "../src/assets/image/avatar.jpg";
 import { Edit, Facebook, Dribbble, Whatsapp, Trash } from "iconsax-react";
 function App() {
   return (
@@ -15,16 +16,19 @@ function App() {
           <div className="w-10 h-10 rounded-full ">
             <img src="" />
           </div>
+          <div className="w-32 h-32 rounded-full">
+            <img src={Avatar} className="w-full" alt="" />
+          </div>
           <p>مهدی ساغری</p>
-          <div className="flex">
-            <div className="w-15 h-15 rounded-full border-solid ">
-              <Facebook size="18" color="#FF8A65" variant="Bold" />
+          <div className="flex items-center justify-center my-4">
+            <div className="w-15 h-15 rounded-full border-solid mx-2 border p-2 ">
+              <Facebook size="21" color="#6a778a" variant="Bold" />
             </div>
-            <div className="w-15 h-15 rounded-full border-solid ">
-              <Dribbble size="18" color="#FF8A65" variant="Bold" />{" "}
+            <div className="w-15 h-15 rounded-full border-solid mx-2 border p-2">
+              <Dribbble size="21" color="#6a778a" variant="Bold" />{" "}
             </div>
-            <div className="w-15 h-15 rounded-full border-solid ">
-              <Whatsapp size="18" color="#FF8A65" variant="Bold" />{" "}
+            <div className="w-15 h-15 rounded-full border-solid mx-2 border p-2">
+              <Whatsapp size="21" color="#6a778a" variant="Bold" />{" "}
             </div>
           </div>
           <Title item={"تگ لاین ها "} />

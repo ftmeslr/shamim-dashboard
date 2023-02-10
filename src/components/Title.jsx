@@ -8,7 +8,7 @@ const Title = ({ item }) => {
 
         <div className="h-[1.5px] w-full bg-gray-200 mx-2"></div>
         <div>
-          <Edit size="24" color="#FF8A65" />
+          <Edit size="24" color="#c1c4c7" />
         </div>
       </div>
     </>
