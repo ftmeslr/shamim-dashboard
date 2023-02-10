@@ -19,7 +19,7 @@ const Sidebar = () => {
       icon: (
         <Element4
           size="21"
-          color={`${activeMenu === "dashboard" ? "#e91a23" : "#77787d"}`}
+          color={`${activeMenu === "dashboard" ? "#1e5cfa" : "#77787d"}`}
           variant={`${activeMenu === "dashboard" ? "Bold" : "Linear"}`}
         />
       ),
@@ -30,7 +30,7 @@ const Sidebar = () => {
       icon: (
         <ProfileCircle
           size="21"
-          color={`${activeMenu === "profile" ? "#e91a23" : "#77787d"}`}
+          color={`${activeMenu === "profile" ? "#1e5cfa" : "#77787d"}`}
           variant={`${activeMenu === "profile" ? "Bold" : "Linear"}`}
         />
       ),
@@ -41,7 +41,7 @@ const Sidebar = () => {
       icon: (
         <Messages3
           size="21"
-          color={`${activeMenu === "conversation" ? "#e91a23" : "#77787d"}`}
+          color={`${activeMenu === "conversation" ? "#1e5cfa" : "#77787d"}`}
           variant={`${activeMenu === "conversation" ? "Bold" : "Linear"}`}
         />
       ),
@@ -52,7 +52,7 @@ const Sidebar = () => {
       icon: (
         <SmsTracking
           size="21"
-          color={`${activeMenu === "sendInvitation" ? "#e91a23" : "#77787d"}`}
+          color={`${activeMenu === "sendInvitation" ? "#1e5cfa" : "#77787d"}`}
           variant={`${activeMenu === "sendInvitation" ? "Bold" : "Linear"}`}
         />
       ),
@@ -63,7 +63,7 @@ const Sidebar = () => {
       icon: (
         <Bill
           size="21"
-          color={`${activeMenu === "factor" ? "#e91a23" : "#77787d"}`}
+          color={`${activeMenu === "factor" ? "#1e5cfa" : "#77787d"}`}
           variant={`${activeMenu === "factor" ? "Bold" : "Linear"}`}
         />
       ),
@@ -74,7 +74,7 @@ const Sidebar = () => {
       icon: (
         <ProfileAdd
           size="21"
-          color={`${activeMenu === "login" ? "#e91a23" : "#77787d"}`}
+          color={`${activeMenu === "login" ? "#1e5cfa" : "#77787d"}`}
           variant={`${activeMenu === "login" ? "Bold" : "Linear"}`}
         />
       ),
@@ -85,7 +85,7 @@ const Sidebar = () => {
       icon: (
         <Shapes1
           size="21"
-          color={`${activeMenu === "show" ? "#e91a23" : "#77787d"}`}
+          color={`${activeMenu === "show" ? "#1e5cfa" : "#77787d"}`}
           variant={`${activeMenu === "show" ? "Bold" : "Linear"}`}
         />
       ),
@@ -111,7 +111,9 @@ const SidebarItem = ({ activeMenu, setActiveMenu, item }) => {
   return (
     <div
       className={`flex items-center p-3 cursor-pointer p-3 ${
-        activeMenu === name ? "bg-red-100 rounded-md" : ""
+        activeMenu === name
+          ? "bg-[#f0f6ff] rounded-md border-r-4 border-[#1e5cfa]"
+          : ""
       }`}
       onClick={() => {
         setActiveMenu(name);
